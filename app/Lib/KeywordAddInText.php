@@ -26,7 +26,6 @@ class KeywordAddInText
         while ($i < count($data['tag'])) {
             $text = $data['text'][$i];
             $tag = $data['tag'][$i];
-            //echo $text."<br>";
             if($results = str_replace($text, $tag, $i == 0 ? $content : $results)){
                 $a++;
                 if($a >= $this->result)
