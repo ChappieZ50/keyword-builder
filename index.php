@@ -4,9 +4,11 @@ $text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, cons
 
 $keyword_builder = new App\Lib\KeywordBuilder($text,1);
 $keywords = $keyword_builder->searchInDomain('https://github.com');
-/*$href_adder = new \App\Lib\KeywordHrefAdder($keywords);
-$href_adder->hrefAdder(['ucwords']);*/
+/*
+ * $href_adder = new \App\Lib\KeywordHrefAdder($keywords);
+$href_adder->hrefAdder(['ucwords']);
+*/
 
 $add_in_text = new \App\Lib\KeywordAddInText($keywords,$text);
 echo $add_in_text->keywordAdder();
-?>
+
