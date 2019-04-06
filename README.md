@@ -24,4 +24,3 @@ yazıdaki değerler ile eşitler ve onları birer anahtar kelimeye çevirir.
     $add_in_text = new \App\Lib\KeywordAddInText($keywords,$text);
     /* Sonuç */ echo $add_in_text->keywordAdder();
  ```
-##### Yakında youtuba bunu sıfırdan yapıp atıcam. Linki burada paylaşırım.
